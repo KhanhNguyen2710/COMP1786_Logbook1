@@ -9,14 +9,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView resultView;
-    private String currentText = "" ;
+    String currentText = "" ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        resultView = findViewById(R.id.resultView);
+        TextView resultView = findViewById(R.id.resultView);
 
 // Number
         Button number1 = findViewById(R.id.number1);
